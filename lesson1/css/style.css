@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #eeeeee;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-top: 0;
+    background: #eea7a3;
+    height: 200px;
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-transform: uppercase;
+}
+
+.name{
+    font-size: 32px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 545px;
+    margin-left: 210px;
+    margin-top: -150px; 
+}
+
+.profession{
+    background: black; 
+    padding: 10px;
+    width: 215px;
+    margin-left: 380px;
+    margin-top: -10px;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    padding-top: 20PX;
+    margin-left: 30px;
+}
+
+.round {
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    border: 2px white solid;
+   }
+
+main{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about{
+    background: #ededed; 
+    width: 35%;   
+}
+
+.about-section{
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.about-title{
+    color: black;
+    border: 3px solid #eea7a3;
+    padding-top: 5px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aabout-text{
+    padding: 10px;
+    
+}
+
+.description{
+    background: white;
+    width: 61%;
+    margin-left: 35%;
+    margin-top: -468px;
+    padding: 1px 15px 5px 15px;
+}
+
+.description-section{
+    padding: 5px;
+}
+
+.description-title{
+    padding: 3px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+

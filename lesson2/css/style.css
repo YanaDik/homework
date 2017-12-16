@@ -1,0 +1,104 @@
+/* For all elements */
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background: #3b3f45;
+    font-family: sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background: #4a4f56;
+    color: #e97f81;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 27px;
+}
+
+.header-title{
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.header-slogan{
+    font-size: 17px;
+}
+
+/* main - checkbox */
+main{
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.checkboxes{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.checkbox{
+    width: 800px;
+    background: #88849d;
+    color: #f9f9f9;
+    height: 63px;
+}
+
+.checkbox:nth-child(even) {
+    background: #7a7692;
+}
+
+label{
+    cursor: pointer;
+}
+
+.checkbox-text{
+    font-size: 20px;
+    margin-left: 57px;
+    margin-top: -26px;
+}
+
+.checkbox-text-other{
+    font-size: 12px;
+    color: #b9c6d5;
+}
+
+.checkbox:hover{
+    background: #625e76;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;    
+}
+
+input{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 19px;
+}
+
+input[type = "checkbox"]:checked + p{
+    text-decoration: line-through;
+    color: #a3a0b4;
+  }
+
+/* main - button */
+button{
+    width: 800px;
+    height: 52px;
+    background: #4a4f56;
+    color: #e97f81;
+    font-size: 18px;
+    border: 0px;
+}
