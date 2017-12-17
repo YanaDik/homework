@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background: #3399cc;
+    border: 15px solid #2b81ac;
+    height: 100%;
+    color: white;
+}
+
+header div{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+ul{
+    width: 70%;
+    height: 400px;
+    border: 2px solid white;
+    margin: 0 auto;
+    list-style: none;
+    font-size: 0;
+}
+
+li{
+    height: 25%;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+li p {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.b-size1{
+    width: 25%    
+}
+
+.b-size2{
+    width: 50%    
+}
+
+.b-size4{
+    width: 100%    
+}
+
+.b-color1{
+    background: #3399cc;
+}
+
+.b-color2{
+    background: #33cccc;
+}
+
+.b-color3{
+    background: #996699;
+}
+
+
+.b-color4{
+    background: #c24747;
+}
+
+
+.b-color5{
+    background: #e2674a;
+}
+
+.b-color6{
+    background: #ffcc66;
+}
+
+.b-color7{
+    background: #99cc99;
+}
+
+.b-color8{
+    background: #669999;
+}
+
+.b-color9{
+    background: #cc6699;
+}
+
+.b-color10{
+    background: #339966;
+}
+
+.b-color11{
+    background: #666699;
+}
+
+footer p{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
