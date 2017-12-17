@@ -4,24 +4,20 @@
 *:after
 {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 body{
-    margin: 0px;
     background: #3b3f45;
     font-family: sans-serif;
-}
-
-p{
-    margin: 0;
-    padding: 0;
 }
 
 /* header */
 header{
     background: #4a4f56;
     color: #e97f81;
-    margin-top: 0;
     text-align: center;
     padding-top: 29px;
     padding-bottom: 27px;
@@ -40,24 +36,25 @@ header{
 /* main - checkbox */
 main{
     width: 800px;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 0 auto;
 }
 
 .checkboxes{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .checkbox{
-    width: 800px;
     background: #88849d;
     color: #f9f9f9;
     height: 63px;
+    border-bottom: 2px solid #88849d;
+    border-top: 2px solid #88849d;
 }
 
 .checkbox:nth-child(even) {
     background: #7a7692;
+    border-color: #7a7692;
 }
 
 label{
@@ -73,12 +70,12 @@ label{
 .checkbox-text-other{
     font-size: 12px;
     color: #b9c6d5;
+    text-decoration: none;
 }
 
 .checkbox:hover{
     background: #625e76;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;    
+    border-color: white;  
 }
 
 input{
@@ -88,7 +85,7 @@ input{
     margin-top: 19px;
 }
 
-input[type = "checkbox"]:checked + p{
+input[type = "checkbox"]:checked + p, span{
     text-decoration: line-through;
     color: #a3a0b4;
   }
