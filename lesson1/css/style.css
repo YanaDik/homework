@@ -1,17 +1,19 @@
-body{
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
+}
+
+body{
     font-family: sans-serif;
     background: #eeeeee;
 }
 
-p{
-    margin: 0;
-    padding: 0;
-}
-
 header{
-    margin-top: 0;
     background: #eea7a3;
     height: 200px;
     width: 800px; 
@@ -19,43 +21,62 @@ header{
     margin-right: auto;
     color: white;
     text-transform: uppercase;
+    vertical-align: middle;
+}
+
+header div{
+    display: inline-block;
+}
+
+.photo {
+    padding-top: 25px;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photo-round {
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    border: 2px white solid;
+    overflow: hidden;
+}
+
+.header-title{
+    padding-top: 30px;
+    width: 70%;
+    margin-left: -14px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .name{
-    font-size: 32px;
+    font-size: 30px;
     border: 2px solid white;
     padding: 10px;
     width: 545px;
-    margin-left: 210px;
-    margin-top: -150px; 
+    margin: 0 auto;
+   
 }
 
 .profession{
     background: black; 
     padding: 10px;
-    width: 215px;
-    margin-left: 380px;
+    width: 235px;
+    margin: 0 auto;
     margin-top: -10px;
 }
-
-.photo{
-    width: 200px;
-    height: 200px;
-    padding-top: 20PX;
-    margin-left: 30px;
-}
-
-.round {
-    height: 150px;
-    width: 150px;
-    border-radius:50%;
-    border: 2px white solid;
-   }
 
 main{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+main div{
+    display: inline-block;
 }
 
 .about{
@@ -63,37 +84,36 @@ main{
     width: 35%;   
 }
 
-.about-section{
+.about > div{
     padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
+    width: 100%;
+ }
 
 .about-title{
     color: black;
     border: 3px solid #eea7a3;
-    padding-top: 5px;
+    padding: 5px;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
+
 }
 
-.aabout-text{
+.about-text{
     padding: 10px;
-    
 }
 
 .description{
     background: white;
-    width: 61%;
-    margin-left: 35%;
-    margin-top: -468px;
-    padding: 1px 15px 5px 15px;
+    width: 65%;
+    margin-left: -5px; 
+    margin-top: -50px;
+    padding: 15px;
 }
 
 .description-section{
-    padding: 5px;
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 .description-title{
@@ -108,3 +128,10 @@ main{
     text-transform: uppercase;
 }
 
+h3{
+    padding-top: 10px;
+}
+
+.description-section p {
+    padding-top: 10px;
+}
