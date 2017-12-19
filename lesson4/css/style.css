@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background: #f1f1f1;
+    color: #c2c2c2;
+}
+
+.content{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.search-blok{
+    height: 170px;   
+    font-size: 60px;  
+}
+
+.search-blok > div{
+    display: inline;
+}
+
+.text-blok, input{
+    width: 80%;
+
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+}
+
+button img{
+    height: 100%;
+    width: 100%
+}
+.section-blok{
+    width: 100%;
+    padding: 10px;
+    margin-left: -4px;
+}
+
+/* .section-blok > div{
+    display: inline;
+} */
+
+.section-blok .section{
+    display: inline-block;
+}
+
+.section{
+    width: 33%;
+    margin: 0;
+}
+
+.section-title{
+    width: 100%;
+}
+
+.section-item{
+    background: #ebebed;
+    width: 100%
+}

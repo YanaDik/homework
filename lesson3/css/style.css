@@ -8,11 +8,16 @@
     outline: none;
 }
 
+*{transition: all .1s ease-in;}
+
+html{height: 100%;}
+
 body{
     background: #3399cc;
     border: 15px solid #2b81ac;
     height: 100%;
     color: white;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 header div{
@@ -43,10 +48,22 @@ li{
     vertical-align: middle;
 }
 
+ul:hover > li{
+    opacity: .6;
+}
+
 li p {
     padding-top: 20px;
     padding-bottom: 15px;
 }
+
+span{
+    opacity: 0.8;
+}
+
+main div ul li:hover{
+    opacity: 1;
+ }
 
 .b-size1{
     width: 25%    
