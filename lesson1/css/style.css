@@ -8,12 +8,12 @@
     outline: none;
 }
 
-body{
+body {
     font-family: sans-serif;
     background: #eeeeee;
 }
 
-header{
+header {
     background: #eea7a3;
     height: 200px;
     width: 800px; 
@@ -24,7 +24,7 @@ header{
     vertical-align: middle;
 }
 
-header div{
+header div {
     display: inline-block;
 }
 
@@ -43,7 +43,7 @@ header div{
     overflow: hidden;
 }
 
-.header-title{
+.header-title {
     padding-top: 30px;
     width: 70%;
     margin-left: -14px;
@@ -51,7 +51,7 @@ header div{
     vertical-align: middle;
 }
 
-.name{
+.name {
     font-size: 30px;
     border: 2px solid white;
     padding: 10px;
@@ -60,7 +60,7 @@ header div{
    
 }
 
-.profession{
+.profession {
     background: black; 
     padding: 10px;
     width: 235px;
@@ -68,28 +68,28 @@ header div{
     margin-top: -10px;
 }
 
-main{
+main {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
     
 }
 
-main div{
+main div {
     display: inline-block;
 }
 
-.about{
+.about {
     background: #ededed; 
     width: 35%;   
 }
 
-.about > div{
+.about > div {
     padding: 15px;
     width: 100%;
  }
 
-.about-title{
+.about-title {
     color: black;
     border: 3px solid #eea7a3;
     padding: 5px;
@@ -99,11 +99,11 @@ main div{
 
 }
 
-.about-text{
+.about-text {
     padding: 10px;
 }
 
-.description{
+.description {
     background: white;
     width: 65%;
     margin-left: -5px; 
@@ -111,12 +111,12 @@ main div{
     padding: 15px;
 }
 
-.description-section{
+.description-section {
     padding-bottom: 15px;
     width: 100%;
 }
 
-.description-title{
+.description-title {
     padding: 3px;
     background: black;
     color: white;
@@ -128,7 +128,7 @@ main div{
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     padding-top: 10px;
 }
 

@@ -11,6 +11,7 @@
 @font-face{ 
     font-family: 'OpenSans-Light';  
     src: url(./../fonts/OpenSans-Light.ttf);
+    font-weight: lighter; 
 }
 
 body{
@@ -61,23 +62,36 @@ body{
     background-attachment: fixed;
     min-height: 933px;
     height: 100%;
-    /* background-color: #929399; */
+    /* background-color: rgba(162, 162, 162, 0.5); */
+}
+
+.main-screen header{
+    z-index: 2;
+}
+
+.main-screen-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(162, 162, 162, 0.4);
+    /* z-index: -1; */
 }
 
 .header{
     color: #eee;
-    /* padding-top: 36px; */
+    padding-top: 20px;
     overflow: hidden;
-    /* margin-bottom: 155px; */
-
-    /* font-family: ''; */
     display: flex;
+    align-items: flex-end;
 }
 .header__logo a{
     color: #cd1d1f;
     text-transform: uppercase;
     font-size: 48px;
     font-family: 'BebasNeueRegular';
+
     /* float: left; */
 }
 .header__logo span{
@@ -88,7 +102,7 @@ body{
     width: 100%;
     justify-content: flex-end;
     display: flex;
-    
+    font-weight: 100;
     /* float: right;
     height: 99px;
     line-height: 99px; */
@@ -97,6 +111,8 @@ body{
 
 .header__nav a{
     color: #eee;
+    font-family: 'OpenSans-Light';
+    font-size: 18px;
     /* float: right;
     height: 99px;
     line-height: 99px; */
@@ -135,21 +151,33 @@ body{
 }
 
 .main-section{
-    /* text-align: center;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-transform: uppercase;
-    color: #fff; */
+    color: #eee;
+    line-height: 50px;
+    font-family: 'OpenSans-Light';
+    font-size: 24px;
 }
+
+.main-section p{
+    padding-bottom: 40px;
+}
+
 
 .main-section__title{
-    font-size: 46px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 30px;
+    font-family: 'Lato-Black';
 }
 
-.main-section__text{
-    font-size: 30px;
-    margin-bottom: 43px;
+.main-section__subtitle{
+    letter-spacing: 0.3em;
 }
+
 
 /* /main-sreen */
 
