@@ -9,36 +9,35 @@ i
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Arial', sans-serif;
     background: #f1f1f1;
     color: #c2c2c2;
 }
 
-.content{
+.content {
     margin: 0 auto;
     width: 70%;
 }
 
-.search-blok{
-    /* height: 170px;    */
+.search-blok {
     font-size: 60px;  
     padding-top: 65px;
     padding-bottom: 60PX;
 }
 
-.search-blok > div{
+.search-blok > div {
     display: inline;
 }
 
-.text-blok, input{
+.text-blok, input {
     width: 85%;
     height: 80px;
     border: 0;
     background-color: #f1f1f1;
 }
 
-input{
+input {
     font-size: 60px;
 }
 
@@ -49,20 +48,20 @@ input::-webkit-input-placeholder {
     color: #c2c2c2;
 }
 
-.btn-srch{
+.btn-srch {
     width: 60px;
     height: 60px;
     font-size: 60px;
 }
 
-// @TODO: как ты строчному элементу задаешь размеры - это не работает и полностью дублирует свойства .btn-srch
-i{
+// @TODO: i -  строчный элемент, как ты ему даешь размеры????
+i {
     width: 60px;
     height: 60px;
     font-size: 60px;
 }
 
-button{
+button {
     width: 60px;
     height: 60px;
     font-size: 60px;
@@ -71,77 +70,68 @@ button{
     background: #f1f1f1; 
 }
 
-
-.section-blok{
+.section-blok {
     width: 100%;
-    
     margin-left: -4px;
 }
 
-/* .section-blok > div{
-    display: inline;
-} */
-
-// @TODO: такого тоже лучше не писать, надо избегать
-.section-blok .section{
+.section-blok .section {
     display: inline-block;
 }
 
-.section{
+.section {
     width: 30%;
     margin: 0;
     font-size: 10px;
     padding-right: 30px;
 }
 
-.section:last-of-type{
+.section:last-of-type {
     padding-right: 0;
 }
 
-.section-title{
+.section-title {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.section-item > div{
+.section-item > div {
     display: inline-block;
 }
 
-.section-item{
+.section-item {
     background: #ebebed;
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
     padding: 10px;
-    
 }
 
-.section-item:hover{
+.section-item:hover {
     color: #d26f84;
     background: #e4e4e6;
  }
 
-.section-photo{
+.section-photo {
     width: 40px;
     height: 40px;
 }
 
-.section-photo img{
+.section-photo img {
     width: 100%;
     height: 100%;
 }
 
-.round{
-    border-radius:50%;
+.round {
+    border-radius: 50%;
     border: 2px #ebebed solid;
     overflow: hidden;
 }
 
-.section-content-text{
+.section-content-text {
     vertical-align: middle;
     padding-left: 15px;
 }
