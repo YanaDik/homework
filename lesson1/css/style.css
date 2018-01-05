@@ -8,12 +8,14 @@
     outline: none;
 }
 
+// @TODO: отступы перед фигруными скобками
 body{
     font-family: sans-serif;
     background: #eeeeee;
 }
 
 header{
+    // @TODO: назание цвета или текстом или  HEX - должно быть однотипно
     background: #eea7a3;
     height: 200px;
     width: 800px; 
@@ -68,6 +70,7 @@ header div{
     margin-top: -10px;
 }
 
+// @TODO: стилить по тегам плохо
 main{
     width: 800px;
     margin-left: auto;

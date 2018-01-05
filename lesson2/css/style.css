@@ -35,6 +35,7 @@ header{
 
 /* main - checkbox */
 main{
+    // @TODO: max-width: 800px; не используй на контейнере width
     width: 800px;
     margin: 0 auto;
 }

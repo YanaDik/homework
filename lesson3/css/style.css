@@ -8,8 +8,10 @@
     outline: none;
 }
 
+// @TODO: transition от 0.3s до 0.5s
 *{transition: all .1s ease-in;}
 
+// @TODO: зачем???
 html{height: 100%;}
 
 body{
@@ -20,6 +22,7 @@ body{
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
+// @TODO: по тегу не стилят
 header div{
     padding-top: 23px;
     padding-bottom: 23px;
@@ -61,10 +64,12 @@ span{
     opacity: 0.8;
 }
 
+// @TODO: дикая вложенность, используй классы
 main div ul li:hover{
     opacity: 1;
  }
 
+// @TODO используй интуитивно понятные классы
 .b-size1{
     width: 25%    
 }

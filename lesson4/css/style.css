@@ -42,6 +42,7 @@ input{
     font-size: 60px;
 }
 
+// @TODO: а для других браузеров плейсхолдер не надо стилить ??
 input::-webkit-input-placeholder {
     font-size: 60px;
     line-height: 3;
@@ -54,6 +55,7 @@ input::-webkit-input-placeholder {
     font-size: 60px;
 }
 
+// @TODO: как ты строчному элементу задаешь размеры - это не работает и полностью дублирует свойства .btn-srch
 i{
     width: 60px;
     height: 60px;
@@ -80,6 +82,7 @@ button{
     display: inline;
 } */
 
+// @TODO: такого тоже лучше не писать, надо избегать
 .section-blok .section{
     display: inline-block;
 }

@@ -1,3 +1,4 @@
+// @TODO: че пусто???
 @font-face{
     font-family: "";
 }
@@ -320,6 +321,7 @@ body{
     position: relative;
   }
 
+// @TODO: class names 
   .form__field-l{
     float: left;
     width: calc((100% - 40px) / 2);
