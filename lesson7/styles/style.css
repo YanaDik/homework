@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'proximanova-regular';  
+  src: url(./../font-awesome/fonts/proximanova-regular.otf);
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayRegular';  
+  src: url(./../font-awesome/fonts/PlayfairDisplayRegular.ttf);
+}
+
+@font-face {
+  font-family: 'FuturaPTHeavy';  
+  src: url(./../font-awesome/fonts/FuturaPTHeavy.otf);
+}
+
+body{
+  background: #464f54;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-screen {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  color: #eee;
+  background: #000;
+  min-height: 188px;
+  margin-left: 25%;
+  margin-top: 50px;
+  position: absolute;
+  width: 75%;
+  overflow: hidden;
+}
+
+.header__name {
+  font-family: 'proximanova-regular';
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 55px;
+  padding-top: 46px;
+}
+
+.header__title {
+  padding: 16px 0px 46px 55px;
+  font-family: 'PlayfairDisplayRegular';
+  font-size: 48px;
+  position: relative;
+}
+
+.header__title:after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 1px;
+  height: 48px;
+  background-color: #eee;
+}
+
+.header__title:before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1px;
+  background-color: #464f54;
+  bottom: 40px;
+}
+
+.panel-section {
+  overflow: hidden;
+  background: #fbc02d;
+  min-height: 80px;
+  margin-left: 30%;
+  padding-top: 26px;
+  padding-left: 50px;
+  color: #eee;
+  position: absolute;
+  width: 70%;
+  margin-top: 238px;
+}
+
+.fa {
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+/* main-section */
+.main-section {
+  margin-top: 150px;
+  margin-left: 5%;
+  background: #fff;
+  color: #464f54;
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.main-section:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  top: 0px;
+  left: 70px;
+  width: 1px;
+  height: 100%;
+  background-color: #8f8f8f;
+}
+
+.main-section__name {
+  font-family: 'proximanova-regular';
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #8f8f8f;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  padding-top: 200px;
+}
+
+.main-section__title {
+  font-family: 'FuturaPTHeavy';
+  font-size: 77px;
+  padding-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.main-section__subtitle {
+  font-family: Georgia;
+  font-size: 30px;
+  font-style: italic;
+  color: #8f8f8f;
+  padding-bottom: 50px;
+}
+
+.main-section__text {
+  font-family: Georgia;
+  font-size: 27px;
+  color: #000000;  
+  padding-bottom: 30px;
+}
