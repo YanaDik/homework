@@ -1,0 +1,13 @@
+body {
+  font-size: 14px;
+  min-width: 320px;
+  overflow-x: hidden;
+  color: $text-color;
+  background: $background-color;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

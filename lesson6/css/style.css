@@ -1,0 +1,140 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+// @TODO: отступы перед фигруными скобками
+body {
+    font-family: sans-serif;
+    background: #eeeeee;
+}
+
+    // @TODO: назание цвета или текстом или  HEX - должно быть однотипно
+header {
+    background: #eea7a3;
+    height: 200px;
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+header div {
+    display: inline-block;
+}
+
+.photo {
+    padding-top: 25px;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photo-round {
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    border: 2px white solid;
+    overflow: hidden;
+}
+
+.header-title {
+    padding-top: 30px;
+    width: 70%;
+    margin-left: -14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.name {
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    width: 545px;
+    margin: 0 auto;
+   
+}
+
+.profession {
+    background: black; 
+    padding: 10px;
+    width: 235px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+// @TODO: стилить по тегам плохо
+main {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+main div {
+    display: inline-block;
+}
+
+.about {
+    background: #ededed; 
+    width: 35%;   
+}
+
+.about > div {
+    padding: 15px;
+    width: 100%;
+ }
+
+.about-title {
+    color: black;
+    border: 3px solid #eea7a3;
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.about-text {
+    padding: 10px;
+}
+
+.description {
+    background: white;
+    width: 65%;
+    margin-left: -5px; 
+    margin-top: -50px;
+    padding: 15px;
+}
+
+.description-section {
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.description-title {
+    padding: 3px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding-top: 10px;
+}
+
+.description-section p {
+    padding-top: 10px;
+}

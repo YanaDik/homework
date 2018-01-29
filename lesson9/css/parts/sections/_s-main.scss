@@ -1,0 +1,68 @@
+.section-main {
+  padding-bottom: 100px;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 55%;
+  }
+
+  &__img-content{
+    width: 45%; 
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+    img{
+      @include img(cover, 100%, auto);
+  }
+}
+  .main-content {
+    padding-bottom: 80px;
+    &__title {
+      width: 100%;
+      @include text(150px, sans-serif, $text-color, uppercase);
+      word-wrap: break-word;
+      text-align: right;
+    }
+    &__description {
+      width: 100%;
+      @include text(24px, sans-serif, $descr-color);
+      text-align: right;
+    }
+    &__link {
+      width: 100%;
+      @include text(24px, sans-serif, $active-color);
+      padding-top: 30px;
+      text-align: right;
+    }
+  }
+}
+
+.pagination {
+  position: absolute;
+  margin-bottom: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__btn {
+    width: 12px;
+    height: 12px;
+    background-color: $title-color;
+    border: 1px solid $title-color;
+    border-radius: 50%;
+    margin: 0 3px;
+    &--active {
+      background-color: $active-color;
+    }
+  }
+}

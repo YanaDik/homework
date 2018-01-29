@@ -1,0 +1,99 @@
+.wave {
+    overflow: hidden;
+    position: relative;
+    width: 630px;
+    height: 50px;
+    }
+    .line {
+    position: absolute;
+    width: 630px;
+    height: 26px;
+    }
+    .line1 {
+    background: linear-gradient(45deg, transparent, transparent 49%, black 49%, transparent 51%);
+    }
+    .line2 {
+    background: linear-gradient(-45deg, transparent, transparent 49%, black 49%, transparent 51%);
+    }
+    .line {
+    background-size: 50px 50px;
+    }
+    
+    .smallLine1 {
+        
+        background: linear-gradient(45deg, transparent, transparent 49%, black 49%, transparent 51%);
+        }
+        .smallLine2:after {
+            top: 10px;
+        background: linear-gradient(-45deg, transparent, transparent 49%, black 49%, transparent 51%);
+        }
+        /* .smallLine1:after {
+    background: linear-gradient(45deg, transparent, transparent 49%, black 49%, transparent 51%);
+    } */
+    /* .smallLine1:after {
+    background: linear-gradient(-45deg, transparent, transparent 49%, black 49%, transparent 51%);
+    } */
+    .smallLine {
+    position: relative;
+    width: 630px;
+    height: 5px; 
+    background-size: 10px 10px;
+    }
+   
+    
+    .circle {
+    position: absolute;
+    width: 630px;
+    height: 20px;
+    background: radial-gradient(16px, transparent, transparent 4px, black 4px, black 10px, transparent 11px);
+    background-size: 30px 40px;
+    }
+    .circle2 {
+    /* Offset to make squigglies line up */
+    top: 20px;
+    left: 15px;
+    background-position: 0px -20px;
+    }
+    .ellipse {
+    position: absolute;
+    background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 630px;
+    height: 20px;
+    }
+    .ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+    }
+
+    .wave1{
+        width: 630px;
+        background: #333;
+        height: 30px;
+        position: relative;
+        }
+        .wave1::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image:
+        radial-gradient(circle at 10px -5px, transparent 12px, #19d1ff 13px);
+        }
+        .wave1::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 15px;
+        background-size: 40px 20px;
+        background-image:
+        radial-gradient(circle at 10px 15px, #19d1ff 12px, transparent 13px);
+        }
