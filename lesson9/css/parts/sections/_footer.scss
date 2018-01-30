@@ -1,0 +1,15 @@
+.footer {
+	padding: 30px 0 30px;
+	margin: 0 auto;
+
+	&__text {
+		@include text();
+		text-align: center;
+		color: $text-form;
+		
+	}
+
+	&__text-comp {
+		color: $title-color;
+	}
+} 

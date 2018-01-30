@@ -16,13 +16,14 @@
     height: $height;
   }
   
-  @mixin placeholder($color, $opacity: 1, $font-size: 14px, $font-family: Tahoma) {
+  @mixin placeholder($color, $opacity: 1, $font-size: 14px, $font-family: Tahoma, $font-style: none) {
     &::-webkit-input-placeholder {
       color: $color;
       opacity: $opacity;
       font-size: $font-size;
       font-family: $font-family;
       text-transform: none;
+      font-style: $font-style;
     }
     &:-moz-placeholder {
       color: $color;
@@ -30,6 +31,7 @@
       font-size: $font-size;
       font-family: $font-family;
       text-transform: none;
+      font-style: $font-style;
     }
     &::-moz-placeholder {
       color: $color;
@@ -37,6 +39,7 @@
       font-size: $font-size;
       font-family: $font-family;
       text-transform: none;
+      font-style: $font-style;
     }
     &:-ms-input-placeholder {
       color: $color;
@@ -44,6 +47,7 @@
       font-size: $font-size;
       font-family: $font-family;
       text-transform: none;
+      font-style: $font-style;
     }
   }
   

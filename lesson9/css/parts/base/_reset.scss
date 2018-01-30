@@ -9,3 +9,14 @@
 li {
   list-style: none;
 }
+
+a,
+button {
+  cursor: pointer;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  border: 0;
+}
