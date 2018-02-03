@@ -1,0 +1,70 @@
+.header {
+	background: url(./../img/fon_heder.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 46px;
+
+  &__title {
+    padding: 210px 0 50px;
+    @include text (48px, $white);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__description {
+    padding: 45px 0 255px;
+    @include text (22px, $white, none);
+    text-align: center;
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
+  &__btn-wrapper {
+    width: 90px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    height: 90px;
+    width: 90px;
+    border: 3px solid $white;
+    border-radius: 50%;
+    background-color: transparent;
+    @include text (50px, $white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+}
+
+.nav {
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__logo {
+    @include text (15px, $white);
+    letter-spacing: 2px;
+    span {
+      color: $blue;
+    }
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 50px;
+      @include text (14px, $white);
+    &:hover {
+      color: $blue;
+    }
+  }
+
+}

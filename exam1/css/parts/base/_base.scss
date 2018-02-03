@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700"');
+
+
+body {
+  overflow-x: hidden;
+  background-color: $white;
+  font-family: 'Lato', sans-serif;
+}
+
+.section {
+  &__wrapper {
+    max-width: 1106px;
+    margin: 0 auto; 
+  }
+
+  &__title {
+    text-align: center;
+    @include text (35px);
+    padding: 116px 0 72px;
+    font-weight: bold;
+  }
+  
+  &__decor-line {
+    height: 2px;
+    width: 86px;
+    background-color: $white;
+    margin: 0 auto;
+  }
+}

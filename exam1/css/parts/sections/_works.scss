@@ -1,0 +1,72 @@
+.works {
+	padding-bottom: 80px;
+	
+	&__decor-line {
+		background-color: $dark-gray;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;	
+    padding: 80px 0 80px;
+        
+	}
+
+	&__btn-wrapper {
+    width: calc((100% - 112px) / 3);
+    margin: 0 auto;
+	}
+	
+	&__btn {
+		width: 100%;
+		border: 3px solid $dark-gray;
+		background-color: transparent;
+		padding-top: 19px;
+		padding-bottom: 19px;
+		@include text(24px);
+		&:hover {
+			color: $blue;
+			border-color: $blue;
+		}
+	}
+}
+
+.works-item {
+	width: calc((100% - 112px) / 3);
+	height: auto;
+	text-align: center;
+	position: relative;
+	&__img {
+      @include size(100%);
+		img {
+      @include img();
+		}
+	}
+	&:hover {
+		.works-item__over {
+			z-index: 1;
+		}
+	}
+
+	&__over {
+		position: absolute;
+		@include size(100%);
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color:  rgba(64, 64, 64, 0.5);
+		z-index: -1;
+	}
+
+	&__title {
+		@include text(22px, $white);
+		margin: 10px 0 10px;
+	}	
+
+	&__link{
+		@include text(45px, $white);
+	}
+}

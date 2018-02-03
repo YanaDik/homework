@@ -1,0 +1,81 @@
+.footer {
+  background: url(./../img/bg-footer.png) no-repeat center;
+	background-size: cover;
+	
+	&__title {
+		color: $white;
+	}
+
+	&__soc {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 69px 0 63px;
+	}
+	
+	&__soc-item {
+		@include text(30px, $white);
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+      color: $blue;
+    }
+	}
+
+	&__form {
+		max-width: 674px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.form {
+
+	padding-bottom: 50px;
+	&__fields {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__field {
+		width: calc((100% - 60px) / 2);
+		background: transparent;
+		&--big {
+			width: 100%;
+			margin-top: 90px;
+		}
+		input {
+			width: 100%;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #fff;
+			@include placeholder($gray, 1, 18px);
+			padding: 10px 0 10px 10px;
+			@include text (18px, $white);
+			&:hover {
+				border-color: $blue;
+			}
+		}
+	}
+	&__btn {
+		width: 100%;
+		padding: 10px 0 10px;
+		background-color: transparent;
+		border: 3px solid $white;
+		@include text(24px, $white);
+		&--wrapper {
+			margin: 0 auto;
+			max-width: 184px;
+			padding: 50px 0 120px;
+		}
+		&:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+	}
+}

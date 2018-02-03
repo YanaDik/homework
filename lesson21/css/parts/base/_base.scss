@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Lato-Black';
+  src: url(./../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url(./../fonts/BebasNeueRegular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(./../fonts/OpenSans-Light.ttf);
+  font-weight: lighter;
+}
+
+body {
+  // font-size: 14px;
+  // min-width: 320px;
+  // overflow-x: hidden;
+  // color: $darkGray;
+  background: #464f54;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-size: 18px;
+  color: #a2a2a2;
+  font-family: 'Lato-Black', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.wrapper {
+  // max-width: 1140px;
+  // padding: 0 15px;
+  // margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 29px;
+  margin: 0 auto;
+}
+
+
+.btn {
+  height: 40px;
+  width: auto;
+  padding: 0 50px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 2px;
+  text-transform: uppercase;
+}

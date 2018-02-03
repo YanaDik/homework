@@ -1,0 +1,29 @@
+.about {
+	background: url(./../img/Layer_about.png) no-repeat center;
+	background-size: cover;
+	padding-bottom: 113px;
+
+  &__wrapper {
+		display: flex;
+	}
+
+	&__info {
+		width: 50%;
+	}
+	&__title {
+		padding: 170px 0 20px;
+		@include text(45px, $white);
+	}
+	&__description {
+		@include text(22px, $white, none);
+		padding-bottom: 75px;
+		font-weight: 300;
+	}
+	&__btn-more {
+		@include text(18px, $white, none);
+		text-decoration: underline;
+		&:hover {
+      color: $blue;
+    }
+	}
+}

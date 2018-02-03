@@ -1,18 +1,4 @@
-@font-face { 
-    font-family: 'Lato-Black';  
-    src: url(./../fonts/Lato-Black.ttf);
-}
 
-@font-face { 
-    font-family: 'BebasNeueRegular';  
-    src: url(./../fonts/BebasNeueRegular.ttf);
-}
-
-@font-face { 
-    font-family: 'OpenSans-Light';  
-    src: url(./../fonts/OpenSans-Light.ttf);
-    font-weight: lighter; 
-}
 
 body {
     background: #464f54;
