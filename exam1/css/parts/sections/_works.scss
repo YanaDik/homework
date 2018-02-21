@@ -1,24 +1,20 @@
 .works {
 	padding-bottom: 80px;
-	
+
 	&__decor-line {
 		background-color: $dark-gray;
 	}
 
 	&__items {
 		display: flex;
-		justify-content: space-between;	
-    padding: 80px 0 80px;
-        
+		justify-content: space-between;
+		padding: 80px 0 80px;
 	}
 
-	&__btn-wrapper {
-    width: calc((100% - 112px) / 3);
-    margin: 0 auto;
-	}
-	
 	&__btn {
-		width: 100%;
+		width: calc((100% - 112px) / 3);
+		margin: 0 auto;
+		display: block;
 		border: 3px solid $dark-gray;
 		background-color: transparent;
 		padding-top: 19px;
@@ -37,9 +33,9 @@
 	text-align: center;
 	position: relative;
 	&__img {
-      @include size(100%);
+		@include size(100%);
 		img {
-      @include img();
+			@include img();
 		}
 	}
 	&:hover {
@@ -57,16 +53,16 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color:  rgba(64, 64, 64, 0.5);
+		background-color: rgba(64, 64, 64, 0.8);
 		z-index: -1;
 	}
 
 	&__title {
 		@include text(22px, $white);
 		margin: 10px 0 10px;
-	}	
+	}
 
-	&__link{
+	&__link {
 		@include text(45px, $white);
 	}
 }
