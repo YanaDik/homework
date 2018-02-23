@@ -1,5 +1,4 @@
 let playlist = document.getElementById('playlist');
-let iconHeart = document.getElementById('icon-heart');
 
 var playList = [
 	{
@@ -67,6 +66,10 @@ playList.forEach((item, i, arr) => {
 	playlistDivContent.appendChild(playlistDivBaSong);
 
 	playlistLi.appendChild(playlistDivContent);
+
+	let iconHeart = document.createElement('i');
+	iconHeart.setAttribute('class', 'far fa-heart');
 	playlistLi.appendChild(iconHeart);
+
 	playlist.appendChild(playlistLi);
 });
