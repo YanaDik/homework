@@ -1,0 +1,46 @@
+.subscribe {
+	padding: 75px 0;
+	background: url('./../img/img9.png') center no-repeat;
+	background-size: cover;
+	&__title {
+		color: $white;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+	}
+
+	&__field {
+		color: $white;
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon {
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		margin: 0 30px;
+		position: absolute;
+	}
+	&__input {
+		width: 70%;
+		height: 40px;
+		background-color: transparent;
+		color: $white;
+		padding: 18px 0;
+		text-transform: uppercase;
+		border: 1px solid $white;
+		padding-left: 70px;
+		&:hover,
+		&:focus {
+			border-color: $red;
+			.fa-envelope {
+				color: $red;
+			}
+		}
+	}
+
+	&__btn {
+		width: 25%;
+	}
+}

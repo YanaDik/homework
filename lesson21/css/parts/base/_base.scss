@@ -1,50 +1,82 @@
-@font-face {
-  font-family: 'Lato-Black';
-  src: url(./../fonts/Lato-Black.ttf);
-}
-
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url(./../fonts/BebasNeueRegular.ttf);
-}
-
-@font-face {
-  font-family: 'OpenSans-Light';
-  src: url(./../fonts/OpenSans-Light.ttf);
-  font-weight: lighter;
-}
-
 body {
-  // font-size: 14px;
-  // min-width: 320px;
-  // overflow-x: hidden;
-  // color: $darkGray;
-  background: #464f54;
-  overflow-x: hidden;
-  min-width: 320px;
-  font-size: 18px;
-  color: #a2a2a2;
-  font-family: 'Lato-Black', Tahoma, Geneva, Verdana, sans-serif;
-
+	overflow-x: hidden;
+	font-size: 18px;
+	color: #a2a2a2;
+	font-family: 'Lato-Black', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.wrapper {
-  // max-width: 1140px;
-  // padding: 0 15px;
-  // margin: 0 auto;
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 29px;
-  margin: 0 auto;
-}
+.section {
+	&__wrapper {
+		max-width: 1140px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+	&__active:hover,
+	&__link:hover {
+		color: #cd1d1f;
+	}
 
+	&__btn {
+		height: 40px;
+		width: auto;
+		background: transparent;
+		border: 2px solid #000;
+		border-radius: 2px;
+		text-transform: uppercase;
+		font-family: 'OpenSans-Light';
+		font-weight: bold;
+		&:hover {
+			color: $red;
+			border-color: $red;
+		}
+	}
 
-.btn {
-  height: 40px;
-  width: auto;
-  padding: 0 50px;
-  background: transparent;
-  border: 2px solid #000;
-  border-radius: 2px;
-  text-transform: uppercase;
+	&__title {
+		padding: 30px 0;
+		text-align: center;
+		font-style: italic;
+		font-size: 40px;
+		color: $darkGray;
+		position: relative;
+		font-family: 'OpenSans-Light';
+		&:after {
+			content: '';
+			height: 3px;
+			width: 112px;
+			background-color: $red;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&:before {
+			content: '';
+			height: 3px;
+			width: 112px;
+			background-color: $red;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__slider {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__active {
+		height: 12px;
+		width: 12px;
+		margin: 0 5px;
+		border-radius: 50%;
+		background: #eee;
+		border: 2px solid #eee;
+		cursor: pointer;
+		&--active,
+		&:hover {
+			background-color: transparent;
+		}
+	}
 }
