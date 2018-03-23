@@ -1,0 +1,37 @@
+.team {
+  padding: 70px 0;
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    background-color: $lightgray;
+    max-width: 290px;
+    width: 100%;
+    height: auto;
+    img {
+      @include img();
+    }
+  }
+  &__slide {
+    width: 100%;
+    padding: 0 44px;
+  }
+  &__content {
+    max-width: 500px;
+    width: 100%;
+    text-align: right;
+    color: $lightgray;
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  &__slide-title {
+    font-size: 20px;
+    color: $gray;
+    padding: 30px 0 14px;
+  }
+  &__slide-subtitle {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+}

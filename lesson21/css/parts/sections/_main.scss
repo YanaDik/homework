@@ -2,10 +2,10 @@
 	padding-top: 20px;
 	padding-bottom: 60px;
 
-	background: url('./../img/main-bg.png') center no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, .9);
+	// background: url('./../img/main-bg.png') center no-repeat;
+	// background-size: cover;
+	// background-attachment: fixed;
+	// background-color: rgba(0, 0, 0, .9);
 }
 
 .header {
@@ -15,6 +15,23 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+
+	&__wrapper {
+		width: 100%;
+
+		background-color: rgba(0, 0, 0, .9);
+	}
+
+	&__content {
+
+	}
+
+	&__item {
+		img {
+		@include img();
+	}
+	}
+
 	&__logo {
 		a {
 			color: $red;

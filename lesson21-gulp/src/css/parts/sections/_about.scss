@@ -1,0 +1,64 @@
+.about {
+	padding: 60px 0;
+	background: url('./../img/bg-3.png') center no-repeat;
+	background-size: cover;
+	&__slider {
+		width: 100%;
+		padding-top: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: calc((100% - 30px) / 2);
+		img {
+			@include img();
+		}
+	}
+	&__title-cont {
+		font-size: 30px;
+		color: $red;
+		padding: 30px 0;
+	}
+	&__subtitle {
+		padding-bottom: 30px;
+	}
+	&__decor {
+		width: 30px;
+		height: 1px;
+		background-color: $darkGray;
+	}
+	&__description {
+		padding-top: 30px;
+	}
+	&__btns {
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 90px;
+	}
+	&__btn {
+		margin-bottom: 30px;
+		width: calc((100% - 70px) / 4);
+		&--long {
+			width: calc((100% - 25px) / 2);
+		}
+		&:hover {
+			border-color: $darkGray;
+			background-color: $darkGray;
+			color: $white;
+		}
+	}
+	&__slider_items {
+		padding-top: 60px;
+	}
+	&__slider_item {
+		background-color: $gray;
+		border-color: transparent;
+		&--active,
+		&:hover {
+			background-color: transparent;
+			border-color: $red;
+		}
+	}
+}

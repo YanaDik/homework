@@ -1,0 +1,63 @@
+.contact-head {
+  padding: 58px 0;
+  max-height: 204px;
+  text-align: center;
+  background: url('./../img/bckg.png') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: $white;
+  &__text {
+    font-size: 20px;
+    padding-bottom: 32px;
+  }
+  &__btn {
+    color: $white;
+    font-size: 20px;
+    display: block;
+    padding: 12px 28px;
+    border: 1px solid $white;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 190px;
+    &:hover {
+      background: $green;
+    }
+  }
+}
+
+.testimonials {
+  background-color: $darkwhite;
+  padding: 70px 0;
+  &__slider {
+    background-color: $white;
+    padding: 50px 93px;
+  }
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 136px;
+    width: 100%;
+    height: 136px;
+    border-radius: 50%;
+    background-size: cover;
+    img {
+      @include img();
+    }
+  }
+  &__content {
+    color: $lightgray;
+    font-size: 16px;
+    max-width: 780px;
+    padding-left: 67px;
+  }
+  &__slider-title {
+    padding: 30px 0 10px;
+    color: $green;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 14px;
+  }
+}

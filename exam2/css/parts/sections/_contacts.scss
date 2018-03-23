@@ -1,0 +1,76 @@
+.contacts {
+  padding: 70px 0;
+  &__map {
+    width: 100%;
+    height: 439px;
+  }
+  &__name {
+    padding: 70px 0 22px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__copyright {
+    font-size: 14px;
+    color: $lightgray;
+    padding-bottom: 39px;
+    text-align: center;
+  }
+  &__soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $col-facebook;
+      color: $white;
+      background-color: $col-facebook;
+      font-size: 16px;
+      margin: 0 4px;
+      &:hover {
+        border-color: $green;
+        background-color: $green;
+      }
+    }
+    div &-twitter {
+      background-color: $col-twitter;
+      border-color: $col-twitter;
+    }
+    div &-linkedin {
+      background-color: $col-linkedin;
+      border-color: $col-linkedin;
+    }
+    div &-instagram {
+      background-color: $col-instagram;
+      border-color: $col-instagram;
+    }
+    div &-vimeo {
+      background-color: $col-vimeo;
+      border-color: $col-vimeo;
+    }
+  }
+  &__soc {
+    &-twitter {
+      background-color: $col-twitter;
+      border-color: $col-twitter;
+    }
+    &-linkedin {
+      background-color: $col-linkedin;
+      border-color: $col-linkedin;
+    }
+    &-instagram {
+      background-color: $col-instagram;
+      border-color: $col-instagram;
+    }
+    &-vimeo {
+      background-color: $col-vimeo;
+      border-color: $col-vimeo;
+    }
+  }
+}

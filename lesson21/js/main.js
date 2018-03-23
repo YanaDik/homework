@@ -87,21 +87,21 @@ $(document).ready(function () {
   });
 
 
-  // change navigation active class oncroll
-  function onScroll(event) {
-    let scrollPos = $(document).scrollTop();
-    $('.header__nav a').each(function () {
-      let currLink = $(this);
-      let refElement = $(currLink.attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('.header__nav a').removeClass("active");
-        currLink.addClass("active");
-      } else {
-        currLink.removeClass("active");
-      }
-    });
-  }
-  $(document).on("scroll", onScroll);
+  // // change navigation active class oncroll
+  // function onScroll(event) {
+  //   let scrollPos = $(document).scrollTop();
+  //   $('.header__nav a').each(function () {
+  //     let currLink = $(this);
+  //     let refElement = $(currLink.attr("href"));
+  //     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+  //       $('.header__nav a').removeClass("active");
+  //       currLink.addClass("active");
+  //     } else {
+  //       currLink.removeClass("active");
+  //     }
+  //   });
+  // }
+  // $(document).on("scroll", onScroll);
 
 
   // show media header navigation
@@ -135,8 +135,8 @@ $(document).ready(function () {
 
   // slick-slider
   $('#slider').slick({
-    // dots: true,
-    // infinite: true,
+    dots: true,
+    infinite: true,
     // speed: 300,
     // slidesToShow: 1,
     // adaptiveHeight: true,
@@ -144,40 +144,40 @@ $(document).ready(function () {
     // centerMode: true,
     // nextArrow: '<button type="button" class="slick-next"> <i class= "fas fa-chevron-right" ></i> </button>',
     // prevArrow: '<button type="button" class="slick-prev"> <i class= "fas fa-chevron-left" ></i> </button>',
-    // autoplay: true,
-    // autoplaySpeed: 3000,
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
+      // dots: true,
+      // infinite: false,
+      // speed: 300,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      infinite: true,
-      nextArrow: '<button type="button" class="slick-next"> <i class= "fas fa-chevron-right" ></i> </button>',
-      prevArrow: '<button type="button" class="slick-prev"> <i class= "fas fa-chevron-left" ></i> </button>',
-      responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      // infinite: true,
+      // nextArrow: '<button type="button" class="slick-next"> <i class= "fas fa-chevron-right" ></i> </button>',
+      // prevArrow: '<button type="button" class="slick-prev"> <i class= "fas fa-chevron-left" ></i> </button>',
+      // responsive: [{
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 3,
+      //       infinite: true,
+      //       dots: true
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 480,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   }
+      // ]
   });
 
 
