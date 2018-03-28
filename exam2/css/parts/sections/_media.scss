@@ -63,9 +63,15 @@
 }
 
 @media (max-width: 350px) {
-  .button-group {
+  .porfolio .button-group {
     width: 100%;
     flex-wrap: wrap;
+    &--active {
+      color: $green;
+      &:before {
+        display: none;
+      }
+    }
   }
   .button-group button {
     padding: 3px;

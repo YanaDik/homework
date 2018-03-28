@@ -7,6 +7,13 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  // add active class to clicked filter-button-group
+  $(".filter-button-group button").click(function (event) {
+    event.preventDefault();
+    $(".filter-button-group button").removeClass('button-group--active');
+    $(this).addClass('button-group--active');
+  });
+
   // Slow scroll from nav item to current section
   $(".header__nav a, .main__btn-next, .contact-head__btn").click(function (event) {
     event.preventDefault();
@@ -14,7 +21,7 @@ $(document).ready(function () {
     let top = $(id).offset().top;
     let headerHeight = $('.header').height();
     let isHeaderSticky = $('.header').hasClass('header--sticky');
-    let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight + 40;
+    let scrollTop = isHeaderSticky ? top - headerHeight + 20 : top - headerHeight + 45;
     $("body, html").animate({
       scrollTop
     }, 700);
@@ -50,7 +57,7 @@ $(document).ready(function () {
     $('.header__nav a').each(function () {
       let currLink = $(this);
       let refElement = $(currLink.attr("href"));
-      if (refElement.position().top - 60 <= scrollPos && refElement.position().top + refElement.height() + 170 > scrollPos) {
+      if (refElement.position().top - 60 <= scrollPos && refElement.position().top + refElement.height() + 140 > scrollPos) {
         $('.header__nav a').removeClass("active");
         currLink.addClass("active");
       } else {
@@ -73,6 +80,11 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
   });
 
+  $(".team__content").niceScroll({
+    cursorcolor: '#19bd9a',
+    cursorwidth: "4px",
+    autohidemode: false,
+  });
 
   $('.porfolio__masonry').masonry({
     itemSelector: '.porfolio__item ',

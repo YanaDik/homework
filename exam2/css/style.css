@@ -285,17 +285,19 @@ body {
 
 .porfolio .button-group button {
   font-family: 'Times New Roman';
+  position: relative;
 }
 
-.porfolio .button-group button:hover, .porfolio .button-group button.active {
+.porfolio .button-group button:hover {
   color: #19bd9a;
 }
 
-.porfolio .button-group button:hover:before, .porfolio .button-group button.active:before {
+.porfolio .button-group--active:before {
   content: '';
-  bottom: 0;
+  position: absolute;
+  bottom: -10px;
   left: 0;
-  width: 70%;
+  width: 40px;
   height: 2px;
   background-color: #19bd9a;
 }
@@ -337,6 +339,7 @@ body {
 .team__content {
   max-width: 500px;
   width: 100%;
+  max-height: 350px;
   text-align: right;
   color: #afb2b6;
   font-size: 14px;
@@ -695,9 +698,15 @@ div .contacts__soc-vimeo {
 }
 
 @media (max-width: 350px) {
-  .button-group {
+  .porfolio .button-group {
     width: 100%;
     flex-wrap: wrap;
+  }
+  .porfolio .button-group--active {
+    color: #19bd9a;
+  }
+  .porfolio .button-group--active:before {
+    display: none;
   }
   .button-group button {
     padding: 3px;
