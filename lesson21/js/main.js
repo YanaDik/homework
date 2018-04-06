@@ -10,15 +10,16 @@ $(document).ready(function () {
 
   // Slow scroll from nav item to current section
   $(".header__nav a, .section-home__btn-next").click(function (event) {
-      event.preventDefault();
-      let id = $(this).attr("href");
-      let top = $(id).offset().top;
-      let headerHeight = $('.header').height();
-      let isHeaderSticky = $('.header').hasClass('header--sticky');
-      let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight - 60;
-      $("body, html").animate({ scrollTop }, 700 );
-    }
-  );
+    event.preventDefault();
+    let id = $(this).attr("href");
+    let top = $(id).offset().top;
+    let headerHeight = $('.header').height();
+    let isHeaderSticky = $('.header').hasClass('header--sticky');
+    let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight - 60;
+    $("body, html").animate({
+      scrollTop
+    }, 700);
+  });
 
 
   // sticky header
@@ -52,27 +53,27 @@ $(document).ready(function () {
       }
     };
     backToTop();
-    $(window).scroll(function () { backToTop(); });
+    $(window).scroll(function () {
+      backToTop();
+    });
     $("#button__page-up").click(function (e) {
-        e.preventDefault();
-        $("html,body").animate({
-            scrollTop: 0
-          }, 700
-        );
-      }
-    );
+      e.preventDefault();
+      $("html,body").animate({
+        scrollTop: 0
+      }, 700);
+    });
   }
 
 
   // open modal
-  $(".section-about__btn--show-modal").click(function() {
+  $(".section-about__btn--show-modal").click(function () {
     $('#modal').addClass('modal--show');
     $('body').addClass('hidden');
   });
 
 
   // close modal
-  $('.modal__btn--close, .modal__btn--cancel').click(function() {
+  $('.modal__btn--close, .modal__btn--cancel').click(function () {
     $('#modal').removeClass('modal--show');
     $('body').removeClass('hidden');
   });
@@ -105,14 +106,14 @@ $(document).ready(function () {
 
 
   // show media header navigation
-  $('.header__nav-btn').click(function() {
+  $('.header__nav-btn').click(function () {
     $('.header__nav').toggleClass('header__nav--show');
     $(this).toggleClass('is-active');
   });
 
 
   // show sidebar
-  $('.btn__show-sidebar').click(function() {
+  $('.btn__show-sidebar').click(function () {
     $('.sidebar').addClass('sidebar--show');
   })
 
@@ -122,7 +123,7 @@ $(document).ready(function () {
   })
 
   // toggle accordion
-  $('.accordion__btn-toggle').click(function() {
+  $('.accordion__btn-toggle').click(function () {
     let isActive = $(this).next().hasClass('accordion__content--show');
     $('.accordion__btn-toggle').removeClass('active');
     $('.accordion__content').removeClass('accordion__content--show');
@@ -136,48 +137,9 @@ $(document).ready(function () {
   // slick-slider
   $('#slider').slick({
     dots: true,
-    infinite: true,
-    // speed: 300,
-    // slidesToShow: 1,
-    // adaptiveHeight: true,
-    // fade: true,
-    // centerMode: true,
-    // nextArrow: '<button type="button" class="slick-next"> <i class= "fas fa-chevron-right" ></i> </button>',
-    // prevArrow: '<button type="button" class="slick-prev"> <i class= "fas fa-chevron-left" ></i> </button>',
+    arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
-      // dots: true,
-      // infinite: false,
-      // speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // infinite: true,
-      // nextArrow: '<button type="button" class="slick-next"> <i class= "fas fa-chevron-right" ></i> </button>',
-      // prevArrow: '<button type="button" class="slick-prev"> <i class= "fas fa-chevron-left" ></i> </button>',
-      // responsive: [{
-      //     breakpoint: 1024,
-      //     settings: {
-      //       slidesToShow: 3,
-      //       slidesToScroll: 3,
-      //       infinite: true,
-      //       dots: true
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 768,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 480,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1
-      //     }
-      //   }
-      // ]
+    autoplaySpeed: 4000,
   });
 
 

@@ -1,0 +1,43 @@
+.contacts {
+  background: url('./../img/Layer 15.png') center no-repeat;
+  background-size: cover;
+  background-color: rgba($black, 0.9);
+  padding: 122px 0 80px;
+  &__title {
+    text-align: center;
+    color: $yellow;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+}
+
+.form {
+  input {
+    border: 2px solid $white;
+    border-radius: 30px;
+    background: transparent;
+    padding: 16px 20px;
+    width: calc((100% - 30px) / 2);
+  }
+  &__fields {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__field {
+    width: 100%;
+    &--big input {
+      width: 100%;
+      margin: 40px 0;
+    }
+  }
+  &__btn {
+    border-color: $yellow;
+    background-color: $yellow;
+    margin: 0 auto;
+    padding: 12px 50px;
+    display: block;
+  }
+}

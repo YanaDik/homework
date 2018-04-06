@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Sans:400,700|Raleway:400,500,700,800');
+body {
+  overflow-x: hidden;
+  color: $black;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.section {
+  &__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__subtitle {
+    font-size: 30px;
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  &__text {
+    padding: 17px 0 30px;
+    font-family: 'Open Sans';
+  }
+  &__btn {
+    border: 2px solid $black;
+    color: $black;
+    padding: 16px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    &:hover {
+      background-color: $black;
+      color: $yellow;
+    }
+  }
+  &__buy {
+    font-family: 'Raleway';
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 269px;
+    width: 269px;
+    border-radius: 50%;
+    background: $black;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    z-index: 1;
+  }
+  &__buy-subtitle {
+    color: $white;
+    font-size: 24px;
+  }
+  &__buy-title {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 37px;
+  }
+}

@@ -1,0 +1,49 @@
+// .main {
+//   background: url('./../img/background.png') center no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   color: $white;
+//   text-align: center;
+//   min-height: 660px;
+//   padding-top: 220px;
+//   padding-bottom: 76px;
+//   &__title {
+//     font-size: 35px;
+//     letter-spacing: 0.3em;
+//     font-family: 'Times New Roman';
+//   }
+//   &__content {
+//     font-size: 16px;
+//     margin: 0 auto;
+//     max-width: 622px;
+//     overflow-wrap: break-word;
+//     padding-top: 40px;
+//     line-height: 2.0;
+//     padding-bottom: 200px;
+//     font-family: 'Times New Roman';
+//   }
+//   &__btn-next {
+//     border: 1px solid $white;
+//     width: 40px;
+//     height: 40px;
+//     padding: 3px 14px;
+//     border-radius: 50%;
+//     color: $white;
+//     margin-top: 220px;
+//     position: relative;
+//     &:before {
+//       content: '';
+//       position: absolute;
+//       width: 8px;
+//       height: 8px;
+//       border-top: 1px solid $white;
+//       border-left: 1px solid $white;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -70%) rotate(-135deg);
+//     }
+//     &:hover {
+//       background-color: $green;
+//     }
+//   }
+// }

@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  height: 52px;
+  width: 100%;
+  color: $yellow;
+  background-color: rgba($black, 0.8);
+  z-index: 100;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  &__logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-top: 51px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__decor {
+    width: 0;
+    height: 0;
+    border-left: 280px solid transparent;
+    border-right: 280px solid transparent;
+    border-top: 280px solid $black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    &:before {
+      transform: rotate(45deg);
+      position: absolute;
+      left: 102px;
+      bottom: 0;
+      content: '';
+      width: 10px;
+      height: 200px;
+      background-color: $yellow;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      position: absolute;
+      right: 102px;
+      bottom: 0;
+      content: '';
+      width: 10px;
+      height: 200px;
+      background-color: $yellow;
+    }
+  }
+  &__nav a {
+    padding: 17px 5px;
+    color: $yellow;
+    text-transform: uppercase;
+    &:hover {
+      background: $yellow;
+      color: $black;
+    }
+  }
+  &__nav {
+    &--left {
+      margin-right: 30px;
+    }
+    &--right {
+      margin-left: 30px;
+    }
+  }
+}

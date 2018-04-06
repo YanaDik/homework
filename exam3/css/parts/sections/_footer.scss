@@ -1,0 +1,39 @@
+.footer {
+  background-color: $yellow;
+  &__wrapper {
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  &__copyright {
+    font-size: 15px;
+    display: flex;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $black;
+      color: $yellow;
+      background-color: $black;
+      font-size: 16px;
+      margin: 0 4px;
+      &:hover {
+        border-color: $white;
+        background-color: $white;
+      }
+    }
+  }
+}

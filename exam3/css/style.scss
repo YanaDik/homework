@@ -1,8 +1,6 @@
 // RESET
 @import "./parts/base/_reset.scss";
 // FONTS
-// @import "./font-awesome.css";
-// @import "./ionicons.css";
 // BASE (variables, mixins, colors, helpers, base)
 @import "./parts/base/_colors.scss";
 @import "./parts/base/_helpers.scss";
@@ -10,10 +8,15 @@
 @import "./parts/base/_mixins.scss";
 @import "./parts/base/_base.scss";
 @import "./parts/base/_slick.scss";
+@import "./parts/base/_media.scss";
 // SECTIONS
-@import "./parts/sections/_main.scss";
-@import "./parts/sections/_gallery.scss";
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_home.scss";
+@import "./parts/sections/_testimonials.scss";
 @import "./parts/sections/_about.scss";
-@import "./parts/sections/_blog.scss";
-@import "./parts/sections/_subscribe.scss";
+@import "./parts/sections/_features.scss";
+@import "./parts/sections/_inspired.scss";
+@import "./parts/sections/_schedule.scss";
+@import "./parts/sections/_services.scss";
+@import "./parts/sections/_contacts.scss";
 @import "./parts/sections/_footer.scss";
