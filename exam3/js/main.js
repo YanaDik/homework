@@ -77,49 +77,10 @@ $(document).ready(function () {
   $('#testimonials__slider').slick({
     dots: false,
     arrows: true,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
-    // nextArrow: '<button type="button" class="slick-next"> <span></span> </button>',
-    // prevArrow: '<button type="button" class="slick-prev"> <span></span> </button>'
-
   });
 
 
-  $('.porfolio__masonry').masonry({
-    itemSelector: '.porfolio__item ',
-    percentPosition: true,
-    horizontalOrder: true,
-    transitionDuration: '0.2s'
-  });
 
 
-  // init Isotope
-  var $grid = $('.porfolio__masonry').isotope({});
-
-  // filter items on button click
-  $('.filter-button-group').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({
-      filter: filterValue
-    });
-  });
 
 });
-
-function initMap() {
-
-  var uluru = {
-    lat: 47.818,
-    lng: 35.182
-  };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: uluru
-  });
-  var image = 'img/map.png';
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-    icon: image
-  });
-};
