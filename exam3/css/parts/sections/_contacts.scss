@@ -14,23 +14,32 @@
 }
 
 .form {
-  input {
+  input, textarea {
     border: 2px solid $white;
     border-radius: 30px;
     background: transparent;
     padding: 16px 20px;
-    width: calc((100% - 30px) / 2);
+    width: 100%;
+    color: $white;
+    &:focus{
+      border-color: $yellow;
+    }
   }
   &__fields {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__field {
-    width: 100%;
-    &--big input {
+    width: calc((100% - 30px) / 2);
+    &--big {
+      height: 150px;
       width: 100%;
       margin: 40px 0;
+      textarea {
+        height: 100%;
+      }
     }
   }
   &__btn {

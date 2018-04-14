@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="./css/fontawesome-all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="img/map.gif" type="image/gif">
+  <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
+  <link rel="shortcut icon" href="img/icon.png" type="image/gif">
 </head>
 
 <body>
@@ -31,62 +32,64 @@
       <div class="header__nav-wrapper">
         <nav class="header__nav header__nav--right">
           <a href="#about">About</a>
-          <a href="#testimonials">testimonials</a>
+          <a href="#schedule">Schedule</a>
           <a href="#contacts">Contact</a>
         </nav>
       </div>
     </div>
-
   </header>
+
   <section id="home" class="home">
     <div class="home__wrapper">
       <p class="home__subtitle">I do this to get</p>
       <p class="home__title">big muscles</p>
     </div>
     <div class="home__btn-wrapper">
-      <a href="#features" class="home__btn-next"></a>
+      <a href="#about" class="home__btn-next"></a>
     </div>
   </section>
   <!-- /main -->
 
   <!-- testimonials -->
   <section id="testimonials" class="testimonials section">
-    <div class="testimonials__wrapper section__wrapper">
-      <div id="testimonials__slider" class="testimonials__slider">
-        <div class="testimonials__item">
-          <div class="testimonials__slide">
-            <p class="testimonials__decor">
-              <i class="fas fa-quote-left"></i>
-            </p>
-            <p class="testimonials__title">What People Says</p>
-            <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
-              back over histor</p>
-            <p class="testimonials__autor">
-              <span>John Rambo</span>Actor and Director</p>
+    <div class="revealator-slideup revealator-delay">
+      <div class="testimonials__wrapper section__wrapper">
+        <div id="testimonials__slider" class="testimonials__slider">
+          <div class="testimonials__item">
+            <div class="testimonials__slide">
+              <p class="testimonials__decor">
+                <i class="fas fa-quote-left"></i>
+              </p>
+              <p class="testimonials__title">What People Says</p>
+              <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
+                back over histor</p>
+              <p class="testimonials__autor">
+                <span>John Rambo</span>Actor and Director</p>
+            </div>
           </div>
-        </div>
-        <div class="testimonials__item">
-          <div class="testimonials__slide">
-            <p class="testimonials__decor">
-              <i class="fas fa-quote-left"></i>
-            </p>
-            <p class="testimonials__title">What People Says</p>
-            <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
-              back over histor</p>
-            <p class="testimonials__autor">
-              <span>John Rambo</span>Actor and Director</p>
+          <div class="testimonials__item">
+            <div class="testimonials__slide">
+              <p class="testimonials__decor">
+                <i class="fas fa-quote-left"></i>
+              </p>
+              <p class="testimonials__title">What People Says</p>
+              <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
+                back over histor</p>
+              <p class="testimonials__autor">
+                <span>John Rambo</span>Actor and Director</p>
+            </div>
           </div>
-        </div>
-        <div class="testimonials__item">
-          <div class="testimonials__slide">
-            <p class="testimonials__decor">
-              <i class="fas fa-quote-left"></i>
-            </p>
-            <p class="testimonials__title">What People Says</p>
-            <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
-              back over histor</p>
-            <p class="testimonials__autor">
-              <span>John Rambo</span>Actor and Director</p>
+          <div class="testimonials__item">
+            <div class="testimonials__slide">
+              <p class="testimonials__decor">
+                <i class="fas fa-quote-left"></i>
+              </p>
+              <p class="testimonials__title">What People Says</p>
+              <p class="testimonials__content">We want to explore. We’re curious people. Look back over histor We want to explore. We’re curious people. Look
+                back over histor</p>
+              <p class="testimonials__autor">
+                <span>John Rambo</span>Actor and Director</p>
+            </div>
           </div>
         </div>
       </div>
@@ -117,9 +120,8 @@
 
   <!-- features -->
   <section id="features" class="features section">
-    <div class="features__decor"></div>
     <div class="features__wrapper section__wrapper">
-      <div class="features__item">
+      <div class="features__item revealator-slideright revealator-delay">
         <p class="features__subtitle">Featured Product</p>
         <p class="features__title">skipping rope</p>
         <div class="features__img">
@@ -127,8 +129,7 @@
         </div>
         <button class="features__btn section__btn">buy now</button>
       </div>
-
-      <div class="features__item">
+      <div class="features__item revealator-slideleft revealator-delay">
         <p class="features__subtitle">popular Product</p>
         <p class="features__title">Hand Gripper</p>
         <div class="features__img">
@@ -169,22 +170,22 @@
         <p class="schedule__title ">schedule</p>
       </div>
       <div class="schedule__content">
-        <div class="schedule__item">
+        <div class="schedule__item revealator-slideleft revealator-delay">
           <p class="schedule__time">
             <span>45</span> minute</p>
           <p class="schedule__package">Fitness Session</p>
         </div>
-        <div class="schedule__item">
+        <div class="schedule__item revealator-slideleft revealator-delay2">
           <p class="schedule__time">
             <span>10</span> sessions</p>
           <p class="schedule__package">Bronze Package</p>
         </div>
-        <div class="schedule__item">
+        <div class="schedule__item revealator-slideleft revealator-delay3">
           <p class="schedule__time">
             <span>20</span> sessions</p>
           <p class="schedule__package">Silver Package</p>
         </div>
-        <div class="schedule__item">
+        <div class="schedule__item revealator-slideleft revealator-delay4">
           <p class="schedule__time">
             <span>30</span> sessions</p>
           <p class="schedule__package">Gold Package</p>
@@ -201,40 +202,38 @@
       <p class="services__subtitle">Go Big or go home</p>
       <p class="services__title">Features & Services</p>
       <div class="services__items">
-        <div class="services__item">
+        <div class="services__item revealator-zoomin revealator-delay">
           <div class="services__item-img">
             <img src="./img/img1.png" alt="">
           </div>
           <p class="services__item-title">Trainer Rating System</p>
         </div>
-        <div class="services__item">
+        <div class="services__item revealator-zoomin revealator-delay2">
           <div class="services__item-img">
-            <img src="./img/img1.png" alt="">
+            <img src="./img/img2.png" alt="">
           </div>
-          <p class="services__item-title">Trainer Rating System</p>
+          <p class="services__item-title">Trainer Information</p>
         </div>
-        <div class="services__item">
+        <div class="services__item revealator-zoomin revealator-delay3">
           <div class="services__item-img">
-            <img src="./img/img1.png" alt="">
+            <img src="./img/img3.png" alt="">
           </div>
-          <p class="services__item-title">Trainer Rating System</p>
+          <p class="services__item-title">Classes Info & Timetable</p>
         </div>
-        <div class="services__item">
+        <div class="services__item revealator-zoomin revealator-delay4">
           <div class="services__item-img">
-            <img src="./img/img1.png" alt="">
+            <img src="./img/img4.png" alt="">
           </div>
-          <p class="services__item-title">Trainer Rating System</p>
+          <p class="services__item-title">Refer Friends</p>
         </div>
-        <div class="services__item">
+        <div class="services__item revealator-zoomin revealator-delay5">
           <div class="services__item-img">
-            <img src="./img/img1.png" alt="">
+            <img src="./img/img5.png" alt="">
           </div>
-          <p class="services__item-title">Trainer Rating System</p>
+          <p class="services__item-title">Workout Timings</p>
         </div>
-
       </div>
     </div>
-
   </section>
   <!-- /services -->
 
@@ -252,7 +251,7 @@
               <input type="text" placeholder="Last Name">
             </div>
             <div class="form__field form__field--big">
-              <input type="text" placeholder="">
+              <textarea type="text" placeholder=""></textarea>
             </div>
           </div>
           <div class="form__btn--wrapper ">
@@ -295,11 +294,9 @@
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/slick.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-  <script src="./js/masonry.pkgd.js"></script>
-  <script src="./js/isotope.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/form-validation.js"></script>
-  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB32Sni_TUbyphLl_3AnB6lwds0wrRte9g&callback=initMap'></script>
+  <script src="./js/fm.revealator.jquery.js"></script>
 </body>
 
 </html>

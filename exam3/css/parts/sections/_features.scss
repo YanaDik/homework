@@ -5,14 +5,27 @@
     display: flex;
     justify-content: space-between;
   }
-  &__decor {
+  &:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 100%;
-    width: 1px;
+    height: 50%;
+    width: 2px;
     background: $black;
+    background: linear-gradient(to top, transparent 10%, $black);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    width: 2px;
+    background: $black;
+    background: linear-gradient(to bottom, transparent 10%, $black);
   }
   &__subtitle {
     text-transform: uppercase;
@@ -21,7 +34,8 @@
   }
   &__title {
     text-transform: uppercase;
-    width: 75%;
+    // width: 75%;
+    padding: 0 15px;
     background: $white;
     font-size: 40px;
     color: $yellow;
@@ -29,10 +43,10 @@
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
   &__img {
     border: 13px solid $lightgray;
-    max-width: 478px;
     width: 100%;
     height: 500px;
     display: flex;

@@ -8,7 +8,7 @@ $(document).ready(function () {
   });
 
   // Slow scroll from nav item to current section
-  $(".header__nav a, .main__btn-next, .contact-head__btn").click(function (event) {
+  $(".header__nav a, .home__btn-next, .contact-head__btn").click(function (event) {
     event.preventDefault();
     let id = $(this).attr("href");
     let top = $(id).offset().top;
@@ -62,7 +62,9 @@ $(document).ready(function () {
 
   $('#teamslider').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
+    // nextArrow: '<button type="button" class="slick-next"> <span></span> </button>',
+    // prevArrow: '<button type="button" class="slick-prev"> <span></span> </button>'
   });
 
   // $('#testimonials__slider').slick({
@@ -75,8 +77,11 @@ $(document).ready(function () {
   $('#testimonials__slider').slick({
     dots: false,
     arrows: true,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+    // nextArrow: '<button type="button" class="slick-next"> <span></span> </button>',
+    // prevArrow: '<button type="button" class="slick-prev"> <span></span> </button>'
+
   });
 
 
