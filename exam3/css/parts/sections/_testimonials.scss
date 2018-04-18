@@ -3,15 +3,19 @@
   height: 0px;
   font-family: 'Open Sans';
   z-index: 2;
+  padding: 0 15px;
   &__wrapper {
+    padding: 0 40px;
+    width: 100%;
     top: 0;
     position: absolute;
     background: $white;
     border-radius: 20%;
-    height: 190px;
+    min-height: 190px;
+    height: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: calc(100% + 30px);
+    max-width: calc(100% + 30px);
     text-align: center;
   }
   &__decor {
@@ -67,11 +71,11 @@
 }
 
 .slick-prev {
-  left: 10px;
+  left: -20px;
 }
 
 .slick-next {
-  right: 10px;
+  right: -20px;
   &:before {
     transform: translateY(-50%) rotate(135deg);
   }

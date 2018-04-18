@@ -1,18 +1,19 @@
 .schedule {
-  min-height: 850px;
-  background: url('./../img/Layer 13.png') center no-repeat;
+  // min-height: 850px;
+  background: url('./../img/Layer 13.png') bottom no-repeat;
   background-size: cover;
   background-color: $bg-gray;
-  padding: 90px 0 5px;
   text-transform: uppercase;
   font-family: 'Open Sans';
+  padding: 90px 0;
   &__wrapper {
-    width: 100%;
+    // width: 100%;
+    // padding: 90px 0;
     display: flex;
     justify-content: space-between;
   }
   &__content {
-    width: 45%;
+    max-width: 45%;
     &--main {
       font-family: 'Raleway';
       width: 70%;
