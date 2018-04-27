@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/fontawesome-all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="shortcut icon" href="img/icon.png" type="image/gif">
 </head>
 
@@ -52,7 +52,7 @@
 
   <!-- testimonials -->
   <section id="testimonials" class="testimonials section">
-    <div class="revealator-slideup revealator-delay">
+    <div data-aos="fade-up">
       <div class="testimonials__wrapper section__wrapper">
         <div id="testimonials__slider" class="testimonials__slider">
           <div class="testimonials__item">
@@ -121,7 +121,7 @@
   <!-- features -->
   <section id="features" class="features section">
     <div class="features__wrapper section__wrapper">
-      <div class="features__item revealator-slideright revealator-delay">
+      <div data-aos="flip-right" data-aos-duration="1000" class="features__item">
         <p class="features__subtitle">Featured Product</p>
         <p class="features__title">skipping rope</p>
         <div class="features__img">
@@ -129,7 +129,7 @@
         </div>
         <button class="features__btn section__btn">buy now</button>
       </div>
-      <div class="features__item revealator-slideleft revealator-delay">
+      <div data-aos="flip-left" data-aos-duration="1000" class="features__item">
         <p class="features__subtitle">popular Product</p>
         <p class="features__title">Hand Gripper</p>
         <div class="features__img">
@@ -170,22 +170,22 @@
         <p class="schedule__title ">schedule</p>
       </div>
       <div class="schedule__content">
-        <div class="schedule__item revealator-slideleft revealator-delay">
+        <div data-aos="fade-up" class="schedule__item">
           <p class="schedule__time">
             <span>45</span> minute</p>
           <p class="schedule__package">Fitness Session</p>
         </div>
-        <div class="schedule__item revealator-slideleft revealator-delay2">
+        <div data-aos="fade-up" data-aos-delay="100" class="schedule__item">
           <p class="schedule__time">
             <span>10</span> sessions</p>
           <p class="schedule__package">Bronze Package</p>
         </div>
-        <div class="schedule__item revealator-slideleft revealator-delay3">
+        <div data-aos="fade-up" data-aos-delay="200" class="schedule__item">
           <p class="schedule__time">
             <span>20</span> sessions</p>
           <p class="schedule__package">Silver Package</p>
         </div>
-        <div class="schedule__item revealator-slideleft revealator-delay4">
+        <div data-aos="fade-up" data-aos-delay="300" class="schedule__item">
           <p class="schedule__time">
             <span>30</span> sessions</p>
           <p class="schedule__package">Gold Package</p>
@@ -202,31 +202,31 @@
       <p class="services__subtitle">Go Big or go home</p>
       <p class="services__title">Features & Services</p>
       <div class="services__items">
-        <div class="services__item revealator-zoomin revealator-delay">
+        <div data-aos="fade-up" class="services__item">
           <div class="services__item-img">
             <img src="./img/img1.png" alt="">
           </div>
           <p class="services__item-title">Trainer Rating System</p>
         </div>
-        <div class="services__item revealator-zoomin revealator-delay2">
+        <div data-aos="fade-up" data-aos-delay="100" class="services__item">
           <div class="services__item-img">
             <img src="./img/img2.png" alt="">
           </div>
           <p class="services__item-title">Trainer Information</p>
         </div>
-        <div class="services__item revealator-zoomin revealator-delay3">
+        <div data-aos="fade-up" data-aos-delay="200" class="services__item">
           <div class="services__item-img">
             <img src="./img/img3.png" alt="">
           </div>
           <p class="services__item-title">Classes Info & Timetable</p>
         </div>
-        <div class="services__item revealator-zoomin revealator-delay4">
+        <div data-aos="fade-up" data-aos-delay="300" class="services__item">
           <div class="services__item-img">
             <img src="./img/img4.png" alt="">
           </div>
           <p class="services__item-title">Refer Friends</p>
         </div>
-        <div class="services__item revealator-zoomin revealator-delay5">
+        <div data-aos="fade-up" data-aos-delay="400" class="services__item">
           <div class="services__item-img">
             <img src="./img/img5.png" alt="">
           </div>
@@ -293,10 +293,12 @@
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/slick.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/form-validation.js"></script>
-  <script src="./js/fm.revealator.jquery.js"></script>
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 .schedule {
-  // min-height: 850px;
   background: url('./../img/Layer 13.png') bottom no-repeat;
   background-size: cover;
   background-color: $bg-gray;
@@ -7,16 +6,16 @@
   font-family: 'Open Sans';
   padding: 90px 0;
   &__wrapper {
-    // width: 100%;
-    // padding: 90px 0;
     display: flex;
     justify-content: space-between;
   }
   &__content {
-    max-width: 45%;
+    max-width: 400px;
+    width: 100%;
     &--main {
       font-family: 'Raleway';
-      width: 70%;
+      max-width: 500px;
+      width: 100%;
     }
   }
   &__subtitle {
@@ -33,6 +32,8 @@
     background: $darkgray;
     color: $white;
     height: 95px;
+    max-width: 400px;
+    width: 100%;
     margin-bottom: 30px;
     position: relative;
     padding: 10px 35px;

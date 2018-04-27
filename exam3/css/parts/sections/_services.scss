@@ -22,7 +22,7 @@
   }
   &__item {
     padding: 30px 10px 15px;
-    height: 165px;
+    min-height: 165px;
     width: calc((100% - 240px) / 5);
     background-color: rgba($black, 0.8);
     border-bottom: 9px solid $white;
